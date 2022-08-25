@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgb(56, 175, 145);
+    border-bottom: 3px solid  rgb(56, 175, 145) ;
+    z-index: 9999;
+}
+.container{
+    width: 960px;
+    margin: 80px auto;
+    background-color: white;
+    position: relative;
+
+}
+.twiter{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/siap.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -14px;
+    right: -15px;
+}
+
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(img/interlaced.png    );
+
+}
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+    
+}
+.header .judul{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(64, 155, 132);
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(46, 112, 96);
+    padding: 3px;  
+}
+.header a:hover {
+    background-color: rgb(64, 155, 132);
+    color: white;
+    padding: 10px;
+}
+.hero{
+    height: 350px;
+    background-image:url(img/hero.jpg);
+    background-size: cover;
+    background-position: 0 -160px;
+    border-top: 5px solid rgb(49, 109, 93);
+    border-bottom: 5px solid rgb(47, 109, 93);
+
+}
+.main{
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+
+}
+.main h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.main .penulis{
+    font-size: 12px;
+    margin-top: -4px;
+}
+.main .penulis a {
+    text-decoration: none;
+    color: green; 
+}
+.main a:hover {
+    background-color: lightcoral;
+    color: white;
+    
+}
+.main .satu{
+    margin-bottom: 20px;
+    font-size: 15px; 
+    text-align: justify;
+    text-indent: 0.5in;
+}
+.main .dua{
+    margin-bottom: 20px;
+    font-size: 15px; 
+    text-align: justify;
+    text-indent: 0.5in;
+}
+.main .tiga{
+    margin-bottom: 20px;
+    font-size: 15px; 
+    text-align: justify;
+    text-indent: 0.5in;
+}
+
+.sidebar{
+    width: 300px;
+    float: right;
+    padding: 30px;
+}
+.sidebar h3{
+    font-weight: bold;
+    color: #666;
+}
+.sidebar img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-right: 10px;
+}
+.sidebar p{
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.footer{
+    background-color: #333;
+        padding: 10px;
+}
+.footer .nama{
+    color: #eaeaea  ;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
+}
+
+/* ini clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
